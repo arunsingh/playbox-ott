@@ -1,0 +1,39 @@
+@import "../../../assets/css/vars.scss";
+
+.navbar-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: $navbar-height;
+}
+.navbar-start {
+  width: 160px;
+  margin: auto;
+  padding: 0 10px;
+}
+.navbar-end {
+  margin: auto;
+  padding: 0 10px;
+  &__item {
+    padding: 5px 0px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: $MQ-lg) {
+  .navbar-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: $navbar-height-MQ-lg;
+  }
+  .navbar-start {
+    margin: 0 0 0 15px;
+  }
+  .navbar-end {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    &__item {
+      padding: 0 10px;
+    }
+  }
+}

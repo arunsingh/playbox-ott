@@ -1,0 +1,8 @@
+@import "../../assets/css/components/authPage.scss";
+
+.signup-page {
+  @include authPage();
+}
+.signup-section {
+  @include authSection();
+}

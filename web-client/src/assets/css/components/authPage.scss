@@ -1,0 +1,58 @@
+@import "../vars.scss";
+
+@mixin authPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/images/movie_poster_bg-min.jpg");
+}
+@mixin authSection() {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  &__route-to {
+    color: $grey;
+    &__link {
+      color: $white;
+    }
+  }
+  padding: 20px;
+}
+@mixin authForm() {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 600px;
+  &__header {
+    font-size: 2em;
+  }
+  &__btn {
+    color: $white;
+    background-color: $netflix-red;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1.3em;
+    border: none;
+  }
+  &__username {
+    padding: 10px 0;
+  }
+  &__password {
+    padding: 10px 0;
+  }
+  &__email {
+    padding: 10px 0;
+  }
+  &__confirm-password {
+    padding: 10px 0;
+  }
+}
+
+@mixin authFormLabel() {
+  font-size: 1.1em;
+}
+@mixin authFormInput() {
+  margin-top: 5px;
+  padding: 10px 10px;
+  width: calc(100% - 25px);
+}

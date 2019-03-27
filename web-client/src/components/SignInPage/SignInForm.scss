@@ -1,0 +1,12 @@
+@import "../../assets/css/components/authPage.scss";
+
+.signin-form {
+  @include authForm();
+}
+
+.signin-form-label {
+  @include authFormLabel();
+}
+.signin-form-input {
+  @include authFormInput();
+}

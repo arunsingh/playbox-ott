@@ -1,0 +1,50 @@
+@import "../assets/css/vars.scss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $netflix-white;
+  background: $netflix-black;
+}
+
+/* hide x axis for netflix-like carousel effects */
+html {
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+/* set each page content min height to 100% combining footer and navbar*/
+.page-wrapper {
+  min-height: calc(100% - (#{$navbar-height} + #{$footer-height}));
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.no-highlight {
+  user-select: none;
+}
+
+@media screen and (min-width: $MQ-lg) {
+  .page-wrapper {
+    min-height: calc(100% - (#{$navbar-height-MQ-lg} + #{$footer-height}));
+  }
+}

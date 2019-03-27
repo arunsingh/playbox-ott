@@ -1,0 +1,16 @@
+@import "../../../assets/css/vars.scss";
+
+.footer-wrapper {
+  width: 100%;
+  display: flex;
+  height: $footer-height;
+  justify-content: space-between;
+}
+.footer-item {
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  &--link {
+    color: $netflix-red;
+  }
+}

@@ -1,0 +1,57 @@
+@import "../../assets/css/vars.scss";
+@import "../../assets/css/effects.scss";
+
+.collection-title {
+  margin: 0;
+  padding: 20px;
+}
+
+.collection-list {
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+  &__slider-btn {
+    position: absolute;
+    top: inherit;
+    width: 50px;
+    height: 200px;
+    z-index: 1;
+    background: transparent;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: $white;
+    justify-content: center;
+    font-size: 1.5em;
+    @include cubicTransition;
+    &:hover {
+      transform: scale(1.3);
+    }
+    &:hover & {
+      &__icon {
+        text-shadow: 0px 0px 4px $white, 0px 0px 20px $white,
+          0px 0px 40px $white;
+        &--disable {
+          text-shadow: none;
+        }
+      }
+    }
+    &--left {
+      left: 0;
+    }
+    &--right {
+      right: 0;
+    }
+    &__icon {
+      font-size: 2.2em;
+      transform: scaleY(1.2);
+      text-shadow: 0px 0px 40px $black;
+      &--disable {
+        text-shadow: none;
+        color: $grey;
+        opacity: 0.8;
+      }
+    }
+  }
+}

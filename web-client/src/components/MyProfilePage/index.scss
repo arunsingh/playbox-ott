@@ -1,0 +1,39 @@
+@import "../../assets/css/modules.scss";
+@import "../../assets/css/vars.scss";
+
+.my-profile-page {
+}
+.profile-greeting {
+  width: 100%;
+  text-align: center;
+  &__p {
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+}
+
+.profile-movie-list {
+  width: 90%;
+  margin: auto;
+  &__title {
+    font-size: 1.3em;
+  }
+  &__desc {
+    font-size: 1.1em;
+  }
+  &__toggle-expand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid $dark-grey;
+    margin-top: 20px;
+    &__btn {
+      @include button();
+      margin-top: -15px;
+      color: $netflix-white;
+      background-color: $netflix-black;
+      font-size: 1.1em;
+      border: none;
+    }
+  }
+}
