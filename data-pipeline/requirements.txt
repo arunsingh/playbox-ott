@@ -2,3 +2,4 @@ Scrapy==1.5.1
 elasticsearch==6.3.1
 elasticsearch-dsl==6.3.0
 scrapy-random-useragent
+twisted>=24.7.0rc1 # not directly required, pinned by Snyk to avoid a vulnerability
