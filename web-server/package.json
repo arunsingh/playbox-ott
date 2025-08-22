@@ -23,7 +23,7 @@
     "jayson": "^2.1.0",
     "joi": "^13.6.0",
     "jsonwebtoken": "^8.3.0",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.21",
     "morgan": "^1.9.0",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
