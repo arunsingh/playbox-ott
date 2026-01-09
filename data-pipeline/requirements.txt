@@ -1,4 +1,5 @@
-Scrapy==1.5.1
+Scrapy==2.14.0
 elasticsearch==6.3.1
 elasticsearch-dsl==6.3.0
 scrapy-random-useragent
+urllib3>=2.6.3 # not directly required, pinned by Snyk to avoid a vulnerability
